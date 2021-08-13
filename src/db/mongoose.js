@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+const { connectionURL } = require("../config/config");
 
-mongoose.connect(process.env.mongo_connection, {
+mongoose.connect(connectionURL, {
   useNewUrlParser: true,
   useCreateIndex: true,
 });

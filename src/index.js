@@ -1,6 +1,6 @@
 const express = require("express");
-const multer = require("multer");
 require("./db/mongoose");
+require("dotenv").config();
 const userRoutes = require("./routers/user");
 const taskRoutes = require("./routers/task");
 
@@ -8,7 +8,7 @@ const taskRoutes = require("./routers/task");
 const app = express();
 
 // Port
-const port = process.env.PORT;
+const port = 3000;
 
 // Parse JSON
 app.use(express.json());
