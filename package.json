@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "heroku-postbuild": "npm install --prefix server && npm install && npm run build"
   },
   "keywords": [
     "nodejs",
     "express",
     "mangodb"
   ],
+  "engines": {
+    "node": "14.15.4",
+    "npm": "7.19.1"
+  },
   "author": "sakthi",
   "license": "ISC",
   "dependencies": {
