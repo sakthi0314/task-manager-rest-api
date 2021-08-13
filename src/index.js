@@ -9,7 +9,7 @@ const taskRoutes = require("./routers/task");
 const app = express();
 
 // Port
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Parse JSON
 app.use(express.json());
